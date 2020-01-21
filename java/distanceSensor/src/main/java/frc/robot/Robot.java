@@ -55,7 +55,7 @@ public class Robot extends TimedRobot {
   @Override
   public void robotPeriodic() {
     // Print latest distance measurement and it's standard deviation to the console
-    System.out.println("Distance: " + (int)m_rangeSensor.getRange() + "mm   Std Dev: " + (int)m_rangeSensor.getRangeSigma() + "mm");
+    System.out.println("Distance: " + (int)m_rangeSensor.getRange() + "mm   Std Dev: " + (int)m_rangeSensor.getRangeSigma() + "mm   Status: " + m_rangeSensor.getStatus());
   }
 
   /**

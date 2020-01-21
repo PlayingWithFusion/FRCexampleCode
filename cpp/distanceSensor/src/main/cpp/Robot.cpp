@@ -31,7 +31,7 @@ void Robot::RobotInit() {
  */
 void Robot::RobotPeriodic() {
   // Print latest distance measurement and it's standard deviation to the console
-  wpi::outs() << "Distance: " << (int)m_distanceSensor.GetRange() << "mm   Std Dev: " << (int)m_distanceSensor.GetRangeSigma() << "mm\n";
+  wpi::outs() << "Distance: " << (int)m_distanceSensor.GetRange() << "mm   Std Dev: " << (int)m_distanceSensor.GetRangeSigma() << "mm   Status: " << m_distanceSensor.GetStatus() << "\n";
 }
 
 /**
