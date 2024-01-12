@@ -111,6 +111,9 @@ public class Robot extends TimedRobot {
     else if (m_joystick.getRawButtonPressed(2) || m_joystick.getRawButtonPressed(3)) {  // X or B button
       m_commandedSpeed = 0;
     }
+    else if (m_joystick.getRawButtonPressed(5)) {
+      m_motor.resetPosition();
+    }
 
     // Place Venom into speed control mode and command m_commandedSpeed (in RPM)
     m_motor.setCommand(ControlMode.SpeedControl, m_commandedSpeed);

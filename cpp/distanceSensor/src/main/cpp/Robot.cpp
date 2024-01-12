@@ -18,7 +18,7 @@ void Robot::RobotInit() {
 
   // Configure time of flight sensor for short ranging mode and sample
   // distance every 40 ms
-  m_distanceSensor.SetRangingMode(frc::TimeOfFlight::RangingMode::kShort, 40);
+  m_distanceSensor.SetRangingMode(frc::TimeOfFlight::RangingMode::kShort, 10);
 }
 
 /**
